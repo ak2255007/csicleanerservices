@@ -1,0 +1,205 @@
+.header {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    /* background: url('background.jpg'); */
+    /* background-image: linear-gradient(140deg, #008ca3 0%, #1a4040 100%), url('background.jpg'); */
+    background-image: linear-gradient(rgba(40, 193, 210, 0.5), rgba(40, 198, 210, 0.5)), url('background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.margin20px {
+    margin: 20px;
+}
+
+.leftbox {
+    /* border: 2px solid red; */
+    width: 50%;
+    padding: 30px;
+}
+
+.heading {
+    width: 100%;
+    /* border: 2px solid green; */
+}
+
+.heading h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.para {
+    /* border: 2px solid blue; */
+}
+
+.para p {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.but {
+    /* border: 2px solid yellow; */
+}
+
+.but button {
+    padding: 12px 25px;
+    background-color: rgb(224, 133, 28);
+    border: 2px solid white;
+    color: white;
+}
+
+.but button:hover {
+    background-color: transparent;
+}
+
+.insideimages {
+    /* border: 2px solid firebrick; */
+}
+
+.rightbox {
+    /* display: flex; */
+    width: 50%;
+    /* border: 2px solid orange; */
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    /* border: 2px solid black; */
+}
+
+@media(max-width:1202px) {
+    .rightbox .image img {
+        width: 100%;
+    }
+}
+
+.leftbox {
+    width: 100%;
+}
+
+@media(max-width:800px) {
+    .header {
+        flex-direction: column;
+    }
+    .rightbox {
+        width: 100%;
+    }
+    .rightbox .image img {
+        width: 80%;
+        height: 80%;
+    }
+    .heading h1 {
+        font-size: 37px;
+    }
+    .insideimages img {
+        width: 40px;
+    }
+    .margin20px {
+        margin: 8px;
+    }
+    .leftbox {
+        text-align: center;
+    }
+}
+
+.margin30px {
+    margin: 6px;
+}
+
+
+/* firstsection  */
+
+.firstsection {
+    padding: 30px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Red Hat Mono', monospace;
+    font-family: 'Righteous', cursive;
+    font-family: 'Vina Sans', cursive;
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstsection h3 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(7, 156, 156);
+    /* border: 2px solid red; */
+}
+
+.firstsection h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(4, 94, 94);
+    /* border: 2px solid red; */
+}
+
+.firstsection p {
+    font-size: 22px;
+    /* border: 2px solid pink; */
+    text-align: center;
+    /* margin: 40px auto; */
+}
+
+
+/* cards  */
+
+.margin40px {
+    margin: 15px 0px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+.box {
+    border-radius: 40px;
+    width: 370px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+
+.cardheadings {
+    font-size: 32px;
+    width: 100%;
+}
+
+.cardpara {
+    font-size: 20px;
+    width: 100%;
+}
+
+.box button {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px 30px;
+}
+
+.box button:hover {
+    color: white;
+    font-weight: bold;
+    border: rgb(99, 158, 32);
+    background: rgb(99, 158, 32);
+}
